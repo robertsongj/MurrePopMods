@@ -1,8 +1,8 @@
 .Rhistory
 .RData
 .Rproj.user
-/figures
-/data
-/output
-/documents
-/presentations
+figures/
+data/
+output/
+documents/
+presentations/
