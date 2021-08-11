@@ -297,9 +297,9 @@ hist(lam[,2])
 hist(lam[,3])
 
 
-setwd("C:\\Users\\robertsong\\Documents\\seabirds\\murres\\harvest\\2015 assessment")
 
-tiff("COMU-poor.tiff", width = 3.2, height = 4.8, units = 'in', res = 300, pointsize = 8)
+
+tiff("./figures/COMU-poor.tiff", width = 3.2, height = 4.8, units = 'in', res = 300, pointsize = 8)
 
 par(mai=c(1.1,0.6,0.2,0.1))
 
