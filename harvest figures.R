@@ -26,6 +26,30 @@ abline(h=seq(100, 1200, 100), lty = 3)
 abline(h=375, lty = 1, col = "red", lwd = 17)
 abline(v=1993, lty =2)
 
+plot(x = year, y = th/1000, 
+     ylab = "Total murre harvest (x1000)", xlab = "Year",
+     type = "b", lwd = 1, pch = 16
+     )
+abline(h=seq(100, 1200, 100), lty = 3, col = 'grey80')
+abline(h=375, lty = 1, col = "red", lwd = 17)
+abline(v=1993, lty =2)
+
+
+allth <- c(200000, rep(NA, 21), th)
+allyear <-  seq_along(allth) + 1954
+
+plot(x = allyear, y = allth/1000, 
+     ylab = list("Total murre harvest (x1000)", cex = 1.5), 
+     xlab = list("Year", cex = 1.5),
+     type = "p", lwd = 1, pch = 16, cex = 2,
+    # xlim = c(1954, 1991),
+    xaxt = 'n', yaxt = 'n'
+)
+abline(h=seq(100, 1200, 100), lty = 3, col = 'grey80')
+abline(v=1993, lty =2)
+points(x = allyear, y = allth/1000, pch = 16, cex =2)
+axis(1, at = seq(1960, 2010, 10), labels = seq(1960, 2010, 10), cex.axis = 1.4)
+axis(2, at = seq(200,1000, 400), labels = seq(200,1000, 400), cex.axis = 1.4)
 
 ##############################################
 #COMU trend figure
